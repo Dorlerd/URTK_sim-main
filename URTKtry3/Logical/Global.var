@@ -1,0 +1,15 @@
+VAR
+	j : INT := 0;
+	buffer : STRING[80] := '';
+	temp : STRING[80] := 'G28';
+	y_real : REAL := 0;
+	z_real : REAL := 0;
+	x_real : REAL := 0;
+	i : INT := 0;
+	out : CNC;
+	working : BOOL := FALSE;
+	homing : BOOL;
+	y : INT := 0;
+	array : ARRAY[0..5] OF STRING[80] := ['G28','G0 X0 Y100 Z0 F10','G0 X0 Y100 Z100 F10','G0 X100 Y100 Z100 F10','G0 X100 Y0 Z100 F10','G0 X0 Y0 Z0 F10'];
+	temp_pos : USINT := 0;
+END_VAR
